@@ -9,57 +9,31 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
 
 <body>
-  <nav class="navbar bg-primary navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><b>Mostrar lojas</b></a>
-    </div>
-  </nav>
-  <div class="py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 p-2">
-          <a href="http://www.havan.com.br">
-            <div class="card box-shadow">
-              <img class="card-img-top px-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Logo_Lojas_Havan.jpg/200px-Logo_Lojas_Havan.jpg">
-              <div class="card-body text-center">
-                <h5 class="card-title text-dark">Havan</h5>
-                <p class="card-text text-dark">3,25% de Takeback</p>
-              </div>
-            </div>
-          </a>
+  <!-- Modal to show store details -->
+  <div class="modal fade" id="store_modal" tabindex="-1" role="dialog" aria-labelledby="store_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="modal_title_id">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
-        <div class="col-md-3 p-2">
-          <a href="http://www.havan.com.br">
-            <div class="card box-shadow">
-              <img class="card-img-top px-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Logo_Lojas_Havan.jpg/200px-Logo_Lojas_Havan.jpg">
-              <div class="card-body text-center">
-                <h5 class="card-title text-dark">Havan</h5>
-                <p class="card-text text-dark">3,25% de Takeback</p>
-              </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="download.png" class="img-responsive" id="modal_image_id"> </div>
+            <div class="col-md-8">
+              <p class="">Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-          </a>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <p class="">3,45% de Takeback</p>
+            </div>
+            <div class="col-md-8"></div>
+          </div>
         </div>
-        <div class="col-md-3 p-2">
-          <a href="http://www.havan.com.br">
-            <div class="card box-shadow">
-              <img class="card-img-top px-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Logo_Lojas_Havan.jpg/200px-Logo_Lojas_Havan.jpg">
-              <div class="card-body text-center">
-                <h5 class="card-title text-dark">Havan</h5>
-                <p class="card-text text-dark">3,25% de Takeback</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 p-2">
-          <a href="http://www.havan.com.br">
-            <div class="card box-shadow">
-              <img class="card-img-top px-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Logo_Lojas_Havan.jpg/200px-Logo_Lojas_Havan.jpg">
-              <div class="card-body text-center">
-                <h5 class="card-title text-dark">Havan</h5>
-                <p class="card-text text-dark">3,25% de Takeback</p>
-              </div>
-            </div>
-          </a>
+        <div class="modal-footer">
+          <button type="button" id="modal_button_id" class="btn btn-primary">Visitar site da loja</button>
         </div>
       </div>
     </div>
