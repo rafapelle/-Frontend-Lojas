@@ -16,13 +16,17 @@
           <p> 11 Lojas encontradas </p>
         </div>
         <div class="col-md-6 text-right">
-          <div id="btn-dropdown" class="btn-group">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Ordenar por: </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" id="orderByID">Ordenar por ID</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle text-gray-dark" type="button" data-toggle="dropdown">Ornedar por:<span class="caret"></span></button>
+            <ul class="dropdown-menu text-left px-2">
+              <li>
+                <a href="#" class="text-gray-dark">Ordenar por nome</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#" class="text-gray-dark">Ordenar por Takeback</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
