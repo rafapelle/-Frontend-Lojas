@@ -5,18 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mostrar lojas</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> </head>
 
-<body class="">
+<body>
+  <nav class="navbar bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><b>&nbsp; Mostrar lojas</b></a>
+    </div>
+  </nav>
   <div class="py-2">
     <div class="container">
       <div class="row" id="orderBy_row">
         <div class="col-md-6">
-          <p> 11 Lojas encontradas </p>
+          <p class="mx-3"> 11 Lojas encontradas </p>
         </div>
         <div class="col-md-6 text-right">
-          <div id="btn-dropdown" class="btn-group pi-draggable" draggable="true">
+          <div id="btn-dropdown" class="btn-group pi-draggable mx-2" draggable="true">
             <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"> Dropdown </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
@@ -28,34 +32,31 @@
       </div>
     </div>
   </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row" id="stores_container">
+        <!-- Stores will be added here -->
+      </div>
+    </div>
+  </div>
   <!-- Modal to show store details -->
   <div class="modal fade" id="store_modal" tabindex="-1" role="dialog" aria-labelledby="store_modal_label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title w-100 mx-4" id="modal_title_id">Havan</h4>
-          <h5 class="modal-title text-right w-100 mx-4">Rating: 4.8</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="">×</span> </button>
+          <h4 class="modal-title w-100 mx-4" id="modal_title_id">Nome loja</h4>
+          <h5 class="modal-title text-right w-100 mx-4" id="modal_rating_id">Rating: 4.8</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal_close_id"><span aria-hidden="true" class="">×</span> </button>
         </div>
         <div class="modal-body">
           <div class="row">
             <div class="col-md-6 text-center">
-              <img src="download.png" class="img my-2 w-100" id="modal_image_id">
-              <p class="lead py-3"><b>3,45% de Takeback</b></p>
+              <img src="" class="img my-2 w-100" id="modal_image_id">
+              <p class="lead py-3" id="modal_takeback_id"><b>3,45% de Takeback</b></p>
             </div>
             <div class="col-md-6">
-              <ul class="">
-                <li>Alimentos e Bebidas</li>
-                <li>Beleza e Saúde</li>
-                <li>Celulares e Smartphones</li>
-                <li>Eletrodomésticos</li>
-                <li>Eletrônicos e Tecnologia</li>
-                <li>Esporte e Lazer</li>
-                <li>Livros CDs e DVDs</li>
-                <li>Loja de Departamentos</li>
-                <li>Moda e Acessórios</li>
-                <li>Brinquedos e Jogos</li>
-                <li>Móveis e Decoração</li>
+              <ul class="" id="modal_category_list_id">
+                <!-- Categories will be added here -->
               </ul>
             </div>
           </div>
@@ -68,7 +69,10 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"></script>
+  <script src="js/cardScript.js"></script>
+  <script src="js/modalScript.js"></script>
+  <script src="js/getStoresInfo.js"></script>
 </body>
 
 </html>
